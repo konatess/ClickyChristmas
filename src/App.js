@@ -4,14 +4,6 @@ import Image from "./components/Image";
 import Button from "./components/Button";
 import './App.css';
 
-// function importAll(r) {
-//   let images = {};
-//   r.keys().forEach((item) => { 
-//     images[item.replace('./', '')] = r(item); 
-//   });
-//   return images;
-// }
-
 function importAll(r) {
     let links = {};
     let allkeys = r.keys().map((item) => {
@@ -19,8 +11,34 @@ function importAll(r) {
         links[key] = r(item);
         return key;
     });
-    let images = { keys: allkeys, links: links };
-    return images;
+    let allImagesObj = { keys: allkeys, links: links };
+    return allImagesObj;
+}
+
+function generateImageGroup(gameLevel, allImages) {
+    let imageGroup = [];
+    let indexList = [];
+    for (let i = 0; i < gameLevel; i++) {
+        let imageIndex = Math.floor((Math.random() * 50))
+        if (!(indexList.includes(imageIndex))) {
+            indexList.push(imageIndex)
+        }
+        else {
+            i--
+        }
+    }
+
+    for (let j = 0; j < indexList.length; j++ ) { 
+        let name = allImages.keys[indexList[j]];
+        let imageObj = {
+            name: name,
+            link: allImages.links[name],
+            wasclicked: false
+        }
+        imageGroup.push(imageObj);
+    };
+    indexList.length = 0
+    return imageGroup;
 }
 
 const images = importAll(require.context('./images', false, /\.(png)$/));
