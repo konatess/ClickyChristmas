@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -7,6 +11,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url(./images/beautiful-beauty-berry-301544.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 code {
