@@ -117,13 +117,19 @@ class App extends Component {
                             </div>
                             <br />
                             <h4>Score: {this.state.score}</h4>
+                            <br />
+                            <br />
                             <p>Choose your difficulty above, then click on each image to play. Can you get throught them all without repeating yourself?</p>
-                            <br/>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
                             <p>Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">Flaticon</a>, licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank" rel="noopener noreferrer">CC 3.0 BY</a></p>
                         </nav>
                     </Col>
                     <Col size="12 md-10">
-                        <Container name="mt-3">
+                        <Container name="mt-3 mr-md-5 px-5 mw-100">
                             {((this.state.images && !this.state.won) && 
                             <Row> 
                                 {this.state.images.map((image, index) => {
