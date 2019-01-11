@@ -60,7 +60,8 @@ class App extends Component {
         this.setState({
             level: id,
             images: levelImages,
-            won: false
+            won: false,
+            score: 0
         })
     }
 
@@ -69,7 +70,12 @@ class App extends Component {
         console.log(id);
         const imageIsRepeat = this.state.images[id].wasclicked;
         if (this.state.score === this.state.level - 1) {
-            this.setState({ won: true})
+            this.setState((state) => { 
+                return { 
+                    won: true, 
+                    score: state.score + 1
+                } 
+            });
         }
         else {
             
@@ -96,7 +102,7 @@ class App extends Component {
 
     render() {
         return (
-            <div className="App text-white h-md-100">
+            <div className="App text-white">
                 <Row height="auto md-100">
                     <Col size="12 md-2" height="auto md-100">
                         <nav className="nav flex-row flex-md-column px-2 py-md-5 bg-green h-auto h-md-100">
@@ -117,15 +123,23 @@ class App extends Component {
                         </nav>
                     </Col>
                     <Col size="12 md-10">
-                        <Container className="m-5 border-white">
-                            {((this.state.images && !this.state.won) && this.state.images.map((image, index) => (
-                                <Image 
-                                    key={image.name}
-                                    name={image.name}
-                                    url={image.link}
-                                    onClick={() => this.handleImageClick(index)}
-                                />
-                                ))) || (this.state.won && 
+                        <Container name="mt-3">
+                            {((this.state.images && !this.state.won) && 
+                            <Row> 
+                                {this.state.images.map((image, index) => {
+                                    let columnWidth = (this.state.level < 17 ? 3 : 2).toString();
+                                    let columnAndImage = <Col key={index} size={`3 md-${columnWidth}`}>
+                                        <Image 
+                                            key={image.name}
+                                            name={image.name}
+                                            url={image.link}
+                                            onClick={() => this.handleImageClick(index)}
+                                            />
+                                    </Col>
+                                    return columnAndImage
+                                })}
+                            </Row>
+                            ) || (this.state.won && 
                                 <div className="m-auto bg-green rounded border-white">
                                     <br/>
                                     <h1 className="text-center py-5 my-5">You Won!</h1>

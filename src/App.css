@@ -1,3 +1,7 @@
+.App {
+  min-height: vh100;
+}
+
 .bg-green {
   background-color: rgb(0, 74, 23);
 }
