@@ -53,8 +53,6 @@ class App extends Component {
     }
 
     handleLevelClick = id => {
-        console.log("clicked");
-        console.log(id);
         let levelImages = this.generateImageGroup(id, imagesObj);
         this.setState({
             level: id,
@@ -65,8 +63,6 @@ class App extends Component {
     }
 
     handleImageClick = id => {
-        console.log("clicked");
-        console.log(id);
         const imageIsRepeat = this.state.images[id].wasclicked;
         if (this.state.score === this.state.level - 1) {
             this.setState((state) => { 
