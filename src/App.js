@@ -23,7 +23,6 @@ class App extends Component {
         buttons: [12, 16, 24, 36],
         won: false,
         score: 0,
-        // imagenames: ["angel.png", "bauble.png", "bell.png", "bonfire.png", "boot.png", "boy.png", "breakfast.png", "cabin.png", "candies.png", "candle.png"],
         images: []
     };
 
@@ -119,7 +118,7 @@ class App extends Component {
                             <h4>Score: {this.state.score}</h4>
                             <br />
                             <br />
-                            <p>Choose your difficulty above, then click on each image to play. Can you get throught them all without repeating yourself?</p>
+                            <p>Choose your difficulty above, then click on each image to play. Can you get through them all without repeating yourself?</p>
                             <br />
                             <br />
                             <br />
