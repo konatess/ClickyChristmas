@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/ClickyChristmas/static/media/giftbag.b077c2d5.png"
   },
   {
-    "revision": "146c488b9d5652fbc185",
+    "revision": "0f1953a5d00fe543f3c9",
     "url": "/ClickyChristmas/static/css/main.3c120493.chunk.css"
   },
   {
-    "revision": "4a34e45d34cafb7623bd",
-    "url": "/ClickyChristmas/static/js/1.4a34e45d.chunk.js"
+    "revision": "b4a0c8291ae6662d7ee6",
+    "url": "/ClickyChristmas/static/js/1.b4a0c829.chunk.js"
   },
   {
     "revision": "78cb0dc9992e359a33dd",
@@ -112,8 +112,8 @@ self.__precacheManifest = [
     "url": "/ClickyChristmas/static/media/gift.d120644c.png"
   },
   {
-    "revision": "146c488b9d5652fbc185",
-    "url": "/ClickyChristmas/static/js/main.146c488b.chunk.js"
+    "revision": "0f1953a5d00fe543f3c9",
+    "url": "/ClickyChristmas/static/js/main.0f1953a5.chunk.js"
   },
   {
     "revision": "3652e838ebea813b5b94dc2c795fd7db",
@@ -220,7 +220,7 @@ self.__precacheManifest = [
     "url": "/ClickyChristmas/static/media/winterhat.b06d8a18.png"
   },
   {
-    "revision": "b223ee6485e00eeb35764f579c36b4f9",
+    "revision": "4c7366d1b51ba69ae827c0d5857c25b5",
     "url": "/ClickyChristmas/index.html"
   }
 ];

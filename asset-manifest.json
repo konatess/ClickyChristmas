@@ -1,9 +1,9 @@
 {
   "main.css": "/ClickyChristmas/static/css/main.3c120493.chunk.css",
-  "main.js": "/ClickyChristmas/static/js/main.146c488b.chunk.js",
-  "main.js.map": "/ClickyChristmas/static/js/main.146c488b.chunk.js.map",
-  "static/js/1.4a34e45d.chunk.js": "/ClickyChristmas/static/js/1.4a34e45d.chunk.js",
-  "static/js/1.4a34e45d.chunk.js.map": "/ClickyChristmas/static/js/1.4a34e45d.chunk.js.map",
+  "main.js": "/ClickyChristmas/static/js/main.0f1953a5.chunk.js",
+  "main.js.map": "/ClickyChristmas/static/js/main.0f1953a5.chunk.js.map",
+  "static/js/1.b4a0c829.chunk.js": "/ClickyChristmas/static/js/1.b4a0c829.chunk.js",
+  "static/js/1.b4a0c829.chunk.js.map": "/ClickyChristmas/static/js/1.b4a0c829.chunk.js.map",
   "runtime~main.js": "/ClickyChristmas/static/js/runtime~main.78cb0dc9.js",
   "runtime~main.js.map": "/ClickyChristmas/static/js/runtime~main.78cb0dc9.js.map",
   "static/media/mitten.png": "/ClickyChristmas/static/media/mitten.01de8a7c.png",
@@ -59,6 +59,6 @@
   "static/media/winterhat.png": "/ClickyChristmas/static/media/winterhat.b06d8a18.png",
   "static/css/main.3c120493.chunk.css.map": "/ClickyChristmas/static/css/main.3c120493.chunk.css.map",
   "index.html": "/ClickyChristmas/index.html",
-  "precache-manifest.b8b8b0f200850ca303b6e1d6a6403c65.js": "/ClickyChristmas/precache-manifest.b8b8b0f200850ca303b6e1d6a6403c65.js",
+  "precache-manifest.47073570648f1ff80c618de2894134e9.js": "/ClickyChristmas/precache-manifest.47073570648f1ff80c618de2894134e9.js",
   "service-worker.js": "/ClickyChristmas/service-worker.js"
 }
